@@ -20,20 +20,20 @@ Első beadandó 'Alkalmazások fejlesztése' tárgyból
 Itt még hiányos
 ##Tesztelés
 	
-	1. Tesztelési környezet bemutatása
-		- A teszteléhez mocha keretrendszert használtam(parancs: `mocha <tesztfájlnév> --timeout 12000`). A maximális késleltetést 15 másodpercre állítottam(`--timeout 12000`) a cloud9 szerver autentikáció terén tapasztalt lassúsága miatt.
-	2. Egységtesztek
-		- Az egységek (entity) közül a user-t teszteltem le a chai ellenőrzőkönyvtár segtségével mocha keretrendszerben. A kapcsolódó tesztfájl: `test/test1_usermodel.js`.
-	3. Funkcionális felületi tesztek
-		- Funkcionális felületi tesztek elvégzéséhez a zombie.js kereteit használtam. A kapcsolódó tesztfájl: `test/test2_zombie.js`
-	4. Tesztesetek
-		- Az entity tesztelésénél kitértem a `user`, létrehozására helyes és helytelen adatokkal, módsítására, keresésére, jelszó ellenőrzésére helyes és helytelen példával.
-		- felületi tesztelés:
-			- nyitólap meglátogatása
-			- új recept készítése
-			- operátor oldal meglátogatása 
-				- ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
-			- új hozzávaló hozzáadása az előbbi példában készített recepthez
+1. Tesztelési környezet bemutatása
+	- A teszteléhez mocha keretrendszert használtam(parancs: `mocha <tesztfájlnév> --timeout 12000`). A maximális késleltetést 15 másodpercre állítottam(`--timeout 12000`) a cloud9 szerver autentikáció terén tapasztalt lassúsága miatt.
+2. Egységtesztek
+	- Az egységek (entity) közül a user-t teszteltem le a chai ellenőrzőkönyvtár segtségével mocha keretrendszerben. A kapcsolódó tesztfájl: `test/test1_usermodel.js`.
+3. Funkcionális felületi tesztek
+	- Funkcionális felületi tesztek elvégzéséhez a zombie.js kereteit használtam. A kapcsolódó tesztfájl: `test/test2_zombie.js`
+4. Tesztesetek
+	- Az entity tesztelésénél kitértem a `user`, létrehozására helyes és helytelen adatokkal, módsítására, keresésére, jelszó ellenőrzésére helyes és helytelen példával.
+	- felületi tesztelés:
+		- nyitólap meglátogatása
+		- új recept készítése
+		- operátor oldal meglátogatása 
+			- ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
+		- új hozzávaló hozzáadása az előbbi példában készített recepthez
 
 ##Felhasználói dökumentáció
 	
