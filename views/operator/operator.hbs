@@ -1,0 +1,44 @@
+{{#each messages_info}}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+{{#each messages_error}}
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Felhasználók</h1>
+</div>
+
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nicknév</th>
+            <th>Vezetéknév</th>
+            <th>Utónév</th>
+            <th>Jogosultság</th>
+            <th>Műveletek</th>
+        </tr>   
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nickname}}</td>
+            <td>{{surname}}</td>
+            <td>{{forename}}</td>
+            <td>{{role}}</td>
+            <td>(<a href="/operator/delete/{{id}}">Törlés</a>)</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<p><a href="/login/signup" class="btn btn-default">Új felhasználó regisztrálása</a></p>
