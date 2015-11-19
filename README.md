@@ -1,2 +1,2 @@
-# recipes_and_ingredients
-1st compulsory exercise for 'Developing Applications (Javascript)' subject
+# Receptek és hozzávalók
+Első beadandó 'Alkalmazások fejlesztése' tárgyból
