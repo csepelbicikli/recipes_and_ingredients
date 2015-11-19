@@ -1,7 +1,7 @@
 # Receptek és hozzávalók
 Első beadandó 'Alkalmazások fejlesztése' tárgyból
 
-## Követelményanalízis
+### Követelményanalízis
 	
 1. Követelmények összegyűjtése
 	1. Funkcionális elvárások
@@ -18,7 +18,7 @@ Első beadandó 'Alkalmazások fejlesztése' tárgyból
 		- ingredient: hozzávaló angolul
 		- recipe: recept angolul
 Itt még hiányos
-##Tesztelés
+###Tesztelés
 	
 1. Tesztelési környezet bemutatása
 	- A teszteléhez mocha keretrendszert használtam(parancs: `mocha <tesztfájlnév> --timeout 12000`). A maximális késleltetést 15 másodpercre állítottam(`--timeout 12000`) a cloud9 szerver autentikáció terén tapasztalt lassúsága miatt.
