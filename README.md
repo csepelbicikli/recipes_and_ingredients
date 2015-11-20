@@ -2,60 +2,61 @@
 ## Követelményanalízis
 
 1. Követelmények összegyűjtése
-i. Funkcionális elvárások
-	- Felhasználóként szeretnék felvinni egy étel elkészítési útmutatóját, ill. azt módsítani/ törölni --> Recept felvitele/ módosítása törlése
-	- Felhasználóként saját receptbe a hozzávalókat is bele szeretném rögzíteni, ill. azokat módostani törölni --> Hozzávalók rögzítése/ módosítása/ törlése
-	- Felhasználóként meg szeretném tekinteni saját receptjeimet --> Recept megtekintése
-	- Operátorként szeretném látni minden felhasználó összes receptjét, azokat módosíthatom v. törölhetem
-	- Operátorként láthatom az összes felhasználó adatjait (kivéve jelszó), felhasznalókat törölhetek
-ii. Nem funkcionális követelmények
-	- Felhasználóbarát, ergonomikus elrendezés és kinézet.
-	- Gyors működés.
-	- Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés.
+	1. Funkcionális elvárások
+		- Felhasználóként szeretnék felvinni egy étel elkészítési útmutatóját, ill. azt módsítani/ törölni --> Recept felvitele/ módosítása törlése
+		- Felhasználóként saját receptbe a hozzávalókat is bele szeretném rögzíteni, ill. azokat módostani törölni --> Hozzávalók rögzítése/ módosítása/ törlése
+		- Felhasználóként meg szeretném tekinteni saját receptjeimet --> Recept megtekintése
+		- Operátorként szeretném látni minden felhasználó összes receptjét, azokat módosíthatom v. törölhetem
+		- Operátorként láthatom az összes felhasználó adatjait (kivéve jelszó), felhasznalókat törölhetek
+	2. Nem funkcionális követelmények
+		- Felhasználóbarát, ergonomikus elrendezés és kinézet.
+		- Gyors működés.
+		- Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés.
 2. Szakterületi fogalomjegyzék
-	ingredient: hozzávaló angolul
-	recipe: recept angolul
+	- ingredient: hozzávaló angolul
+	- recipe: recept angolul
 3. Használatieset-modell
-i. Szerepkörök
-	- vendég('guest'): a nyitóoldal tartalmához fér hozzá, mást nem tud
-	- normál felhasználó('normal'): a vendég szerepkörén túl tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, mdosítani, törölni
-	- operátor('operator'): a normál felhasználó szerepkörén túl bármely felhasználó receptjét kezelheti, továbbá láthatja a felhasználók adatait, vmint törölhet is felhasználókat
-ii. Használati eset diagramok
-	![Használati eset diagram](docs/images/usecase.jpg)
-iii. Folyamatok pontos menete
-	![Folyamat pontos menete](docs/images/folyamat.jpg)
+	1. Szerepkörök
+		- vendég('guest'): a nyitóoldal tartalmához fér hozzá, mást nem tud
+		- normál felhasználó('normal'): a vendég szerepkörén túl tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, mdosítani, törölni
+		- operátor('operator'): a normál felhasználó szerepkörén túl bármely felhasználó receptjét kezelheti, továbbá láthatja a felhasználók adatait, vmint törölhet is felhasználókat
+	2. Használati eset diagramok
+		![Használati eset diagram](docs/images/usecase.jpg)
+	3. Folyamatok pontos menete
+		![Folyamat pontos menete](docs/images/folyamat.jpg)
+
 
 ## Tervezés
 
 1. Architektúra terv
-i. Komponensdiagram
-ii. Oldaltérkép
-	![Oldaltérkép](docs/images/oldalterkep.jpg)
-iii. Végpontok
-	Nyitólap: /
-	Bejelentkezés: /login
-	Regisztráció: /login/signup
-	Kijelentkezés: /logout
-	Receptek listázása: /recipes/list
-	Recept megjelenítése: /recipes/describe/:id
-	Hozzávaló hozzáadása: /ingredients/new?id=:id
-	Hozzávaló módosítása: /ingredients/modify/:id
-	Hozzávaló törlése: /ingredients/delete/:id
-	Recept módosítása: /recipes/modify/:id
-	Recept törlése: /recipes/delete/:id
-	Új recept felvétele: /recipes/new
-	Operátori felület: /operator
-	Felhasználó törlése: /operator/delete/:id
+	1. Komponensdiagram
+	2. Oldaltérkép
+		![Oldaltérkép](docs/images/oldalterkep.jpg)
+	3. Végpontok
+		Nyitólap: /
+		Bejelentkezés: /login
+		Regisztráció: /login/signup
+		Kijelentkezés: /logout
+		Receptek listázása: /recipes/list
+		Recept megjelenítése: /recipes/describe/:id
+		Hozzávaló hozzáadása: /ingredients/new?id=:id
+		Hozzávaló módosítása: /ingredients/modify/:id
+		Hozzávaló törlése: /ingredients/delete/:id
+		Recept módosítása: /recipes/modify/:id
+		Recept törlése: /recipes/delete/:id
+		Új recept felvétele: /recipes/new
+		Operátori felület: /operator
+		Felhasználó törlése: /operator/delete/:id
 2. Felhasználóifelület-modell
-i. Oldalvázlatok
-	![Oldalvázlatok](docs/images/oldalterv_op.jpg)
+	1. Oldalvázlatok
+		![Oldalvázlatok](docs/images/oldalterv_op.jpg)
 3. Osztálymodell
-i. Adatmodell
-	![Adatmodell](docs/images/adatmodell.jpg)
-ii. Adatbázisterv
-	![Adatbázisterv](docs/images/adatbterv.jpg)
-iii. Állapotdiagram
-	![Állapotdiagram](docs/images/allapotdiagram.jpg)
+	1. Adatmodell
+		![Adatmodell](docs/images/adatmodell.jpg)
+	2. Adatbázisterv
+		![Adatbázisterv](docs/images/adatbterv.jpg)
+	3. Állapotdiagram
+		![Állapotdiagram](docs/images/allapotdiagram.jpg)
 
 
 ## Implementáció
@@ -82,11 +83,11 @@ iii. Állapotdiagram
 4. Tesztesetek
 	- Az entity tesztelésénél kitértem a `user`, létrehozására helyes és helytelen adatokkal, módsítására, keresésére, jelszó ellenőrzésére helyes és helytelen példával.
 	- felületi tesztelés:
-		+ nyitólap meglátogatása
-		+ új recept készítése
-		+ operátor oldal meglátogatása 
-			* ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
-		+ új hozzávaló hozzáadása az előbbi példában készített recepthez
+		- nyitólap meglátogatása
+		- új recept készítése
+		- operátor oldal meglátogatása 
+			- ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
+		- új hozzávaló hozzáadása az előbbi példában készített recepthez
 
 
 ##Felhasználói dökumentáció
