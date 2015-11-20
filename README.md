@@ -33,20 +33,20 @@
 	2. Oldaltérkép
 		![Oldaltérkép](docs/images/oldalterkep.jpg)
 	3. Végpontok
-		Nyitólap: /
-		Bejelentkezés: /login
-		Regisztráció: /login/signup
-		Kijelentkezés: /logout
-		Receptek listázása: /recipes/list
-		Recept megjelenítése: /recipes/describe/:id
-		Hozzávaló hozzáadása: /ingredients/new?id=:id
-		Hozzávaló módosítása: /ingredients/modify/:id
-		Hozzávaló törlése: /ingredients/delete/:id
-		Recept módosítása: /recipes/modify/:id
-		Recept törlése: /recipes/delete/:id
-		Új recept felvétele: /recipes/new
-		Operátori felület: /operator
-		Felhasználó törlése: /operator/delete/:id
+		- Nyitólap: /
+		- Bejelentkezés: /login
+		- Regisztráció: /login/signup
+		- Kijelentkezés: /logout
+		- Receptek listázása: /recipes/list
+		- Recept megjelenítése: /recipes/describe/:id
+		- Hozzávaló hozzáadása: /ingredients/new?id=:id
+		- Hozzávaló módosítása: /ingredients/modify/:id
+		- Hozzávaló törlése: /ingredients/delete/:id
+		- Recept módosítása: /recipes/modify/:id
+		- Recept törlése: /recipes/delete/:id
+		- Új recept felvétele: /recipes/new
+		- Operátori felület: /operator
+		- Felhasználó törlése: /operator/delete/:id
 2. Felhasználóifelület-modell
 	1. Oldalvázlatok
 		![Oldalvázlatok](docs/images/oldalterv_op.jpg)
@@ -62,14 +62,14 @@
 ## Implementáció
 
 1. Fejlesztői környezet bemutatása
-	A fejlesztéshez a Cloud9 webes felületét használtam, amely egy virtuális linux-alapú felületet biztosít annak minden hasznos eszközével (bash, fájlböngésző, színkiemeléses szövegszerkesztő), szerver tesztelésére saját ideiglenes domaint kínál, valamint fájlok feltöltésére  is lehetőséget ad. Többféle programozási nyelvet is támogat.
+	- A fejlesztéshez a Cloud9 webes felületét használtam, amely egy virtuális linux-alapú felületet biztosít annak minden hasznos eszközével (bash, fájlböngésző, színkiemeléses szövegszerkesztő), szerver tesztelésére saját ideiglenes domaint kínál, valamint fájlok feltöltésére  is lehetőséget ad. Többféle programozási nyelvet is támogat.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
-	A forrásfájlokat a következők szerint csoportosítottam
-	- Model - View (itt: handlebars) - Controller - struktúra (`models/ - views/ - controllers/`)
-	- `public/` könyvtár: statikus segédelemek (jelen esetben: Bootswatch css)
-	- `config/` könyvtár: waterline tárolási beállítások
-	- `test/` könyvtár: tesztelő szkriptek
-	- `node_modules` könyvtár: node.js segédmodulok
+	-A forrásfájlokat a következők szerint csoportosítottam
+		- Model - View (itt: handlebars) - Controller - struktúra (`models/ - views/ - controllers/`)
+		- `public/` könyvtár: statikus segédelemek (jelen esetben: Bootswatch css)
+		- `config/` könyvtár: waterline tárolási beállítások
+		- `test/` könyvtár: tesztelő szkriptek
+		- `node_modules` könyvtár: node.js segédmodulok
 
 
 ##Tesztelés
