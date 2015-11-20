@@ -33,20 +33,20 @@
 	2. Oldaltérkép
 		![Oldaltérkép](docs/images/oldalterkep.jpg)
 	3. Végpontok
-		- Nyitólap: /
-		- Bejelentkezés: /login
-		- Regisztráció: /login/signup
-		- Kijelentkezés: /logout
-		- Receptek listázása: /recipes/list
-		- Recept megjelenítése: /recipes/describe/:id
-		- Hozzávaló hozzáadása: /ingredients/new?id=:id
-		- Hozzávaló módosítása: /ingredients/modify/:id
-		- Hozzávaló törlése: /ingredients/delete/:id
-		- Recept módosítása: /recipes/modify/:id
-		- Recept törlése: /recipes/delete/:id
-		- Új recept felvétele: /recipes/new
-		- Operátori felület: /operator
-		- Felhasználó törlése: /operator/delete/:id
+		- Nyitólap: `/`
+		- Bejelentkezés: `/login`
+		- Regisztráció: `/login/signup`
+		- Kijelentkezés: `/logout`
+		- Receptek listázása: `/recipes/list`
+		- Recept megjelenítése: `/recipes/describe/:id`
+		- Hozzávaló hozzáadása: `/ingredients/new?id=:id`
+		- Hozzávaló módosítása: `/ingredients/modify/:id`
+		- Hozzávaló törlése: `/ingredients/delete/:id`
+		- Recept módosítása: `/recipes/modify/:id`
+		- Recept törlése: `/recipes/delete/:id`
+		- Új recept felvétele: `/recipes/new`
+		- Operátori felület: `/operator`
+		- Felhasználó törlése: `/operator/delete/:id`
 2. Felhasználóifelület-modell
 	1. Oldalvázlatok
 		![Oldalvázlatok](docs/images/oldalterv_op.jpg)
@@ -95,4 +95,4 @@
 1. A futtatáshoz ajánlott hardver-, szoftver konfiguráció
 	A futtatáshoz minimum 2GHz-es egymagos processzor, legalább 512 MB RAM és 1GB szabad tárhely ajánlott. A program használatához valamilyen Linux operációs rendszer disztribúció szükséges.
 2. Telepítés lépései és a program használata
-	A fájlokat a GitHub 'Download Zip' opciója segítségével lehet letölteni ezután a saját szerverre kicsomagolással felrakható, majd a server.js futtatásával elindítható. Az esetleges függőségeket (dependency) a `npm install <fuggoseg> --save` paranccsal telepíthetjük.
+	A fájlokat a GitHub `Download Zip` opciója segítségével lehet letölteni ezután a saját szerverre kicsomagolással felrakható, majd a server.js futtatásával elindítható. Az esetleges függőségeket (dependency) a `npm install <fuggoseg> --save` paranccsal telepíthetjük.
