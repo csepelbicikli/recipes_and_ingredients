@@ -69,7 +69,7 @@
 		- `public/` könyvtár: statikus segédelemek (jelen esetben: Bootswatch css)
 		- `config/` könyvtár: waterline tárolási beállítások
 		- `test/` könyvtár: tesztelő szkriptek
-		- `node_modules` könyvtár: node.js segédmodulok
+		- `node_modules/` könyvtár: node.js segédmodulok
 
 
 ##Tesztelés
