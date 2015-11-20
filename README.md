@@ -21,9 +21,9 @@
 		- normál felhasználó('normal'): a vendég szerepkörén túl tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, mdosítani, törölni
 		- operátor('operator'): a normál felhasználó szerepkörén túl bármely felhasználó receptjét kezelheti, továbbá láthatja a felhasználók adatait, vmint törölhet is felhasználókat
 	2. Használati eset diagramok
-		![Használati eset diagram](docs/images/usecase.jpg)
+		![nincs_meg](docs/images/usecase.jpg)
 	3. Folyamatok pontos menete
-		![Folyamat pontos menete](docs/images/folyamat.jpg)
+		![nincs_meg](docs/images/folyamat.jpg)
 
 
 ## Tervezés
@@ -31,7 +31,7 @@
 1. Architektúra terv
 	1. Komponensdiagram
 	2. Oldaltérkép
-		![Oldaltérkép](docs/images/oldalterkep.jpg)
+		![nincs_meg](docs/images/oldalterkep.jpg)
 	3. Végpontok
 		- Nyitólap: `/`
 		- Bejelentkezés: `/login`
@@ -49,14 +49,14 @@
 		- Felhasználó törlése: `/operator/delete/:id`
 2. Felhasználóifelület-modell
 	1. Oldalvázlatok
-		![Oldalvázlatok](docs/images/oldalterv_op.jpg)
+		![nincs_meg](docs/images/oldalterv_op.jpg)
 3. Osztálymodell
 	1. Adatmodell
-		![Adatmodell](docs/images/adatmodell.jpg)
+		![nincs_meg](docs/images/adatmodell.jpg)
 	2. Adatbázisterv
-		![Adatbázisterv](docs/images/adatbterv.jpg)
+		![nincs_meg](docs/images/adatbterv.jpg)
 	3. Állapotdiagram
-		![Állapotdiagram](docs/images/allapotdiagram.jpg)
+		![nincs_meg](docs/images/allapotdiagram.jpg)
 
 
 ## Implementáció
