@@ -17,6 +17,8 @@ Első beadandó 'Alkalmazások fejlesztése' tárgyból
 2. Szakterületi fogalomjegyzék
 		- ingredient: hozzávaló angolul
 		- recipe: recept angolul
+
+
 Itt még hiányos
 ###Tesztelés
 	
@@ -34,6 +36,7 @@ Itt még hiányos
 		- operátor oldal meglátogatása 
 			- ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
 		- új hozzávaló hozzáadása az előbbi példában készített recepthez
+
 
 ##Felhasználói dökumentáció
 	
