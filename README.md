@@ -64,7 +64,7 @@
 1. Fejlesztői környezet bemutatása
 	- A fejlesztéshez a Cloud9 webes felületét használtam, amely egy virtuális linux-alapú felületet biztosít annak minden hasznos eszközével (bash, fájlböngésző, színkiemeléses szövegszerkesztő), szerver tesztelésére saját ideiglenes domaint kínál, valamint fájlok feltöltésére  is lehetőséget ad. Többféle programozási nyelvet is támogat.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
-	-A forrásfájlokat a következők szerint csoportosítottam
+	- A forrásfájlokat a következők szerint csoportosítottam
 		- Model - View (itt: handlebars) - Controller - struktúra (`models/ - views/ - controllers/`)
 		- `public/` könyvtár: statikus segédelemek (jelen esetben: Bootswatch css)
 		- `config/` könyvtár: waterline tárolási beállítások
